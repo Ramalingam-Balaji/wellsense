@@ -1,0 +1,10 @@
+{
+  "[project]/src/components/wellsense/TripMap.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/src/components/wellsense/TripMap.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_1pflgkkzbfl5r._.js",
+      "static/chunks/src_components_wellsense_TripMap_tsx_0ongin6v3osdh._.js",
+      "static/chunks/node_modules_leaflet_dist_leaflet_1ybdq6vk9u_wd.css"
+    ]
+  }
+}
