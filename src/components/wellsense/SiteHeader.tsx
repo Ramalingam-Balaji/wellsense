@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -21,19 +22,22 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-[1000] border-b border-[#e9ddcb] bg-[#fbf6ee]/95 shadow-[0_6px_24px_-18px_rgba(75,60,35,0.5)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="WellSense home">
-          <span className="brand-mark">
-            <Leaf size={26} aria-hidden />
-          </span>
-          <span>
-            <span className="block font-display text-[22px] leading-none tracking-tight text-[#33451e] sm:text-[27px]">
-              well<span className="text-[#9a6039]">sense</span>
-            </span>
-            <span className="mt-1 block text-[8px] font-semibold tracking-[0.28em] text-[#78664f]">
-              ERADICATING DIABESITY
-            </span>
-          </span>
-        </Link>
+
+
+<Link
+  href="/"
+  className="flex items-center"
+  aria-label="WellSense home"
+>
+  <Image
+    src="/images/wellsense-logo.png"
+    alt="WellSense – Eradicating Diabesity"
+    width={180}
+    height={60}
+    priority
+    className="h-auto w-[140px] object-contain sm:w-[170px]"
+  />
+</Link>
 
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
           {links.map((link) => (

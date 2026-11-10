@@ -124,27 +124,68 @@ function TripMap({ trip }) {
                                 markersRef.current[t.month] = m;
                             },
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$leaflet$2f$lib$2f$Popup$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Popup"], {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                                        children: t.short
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/wellsense/TripMap.tsx",
-                                        lineNumber: 72,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/src/components/wellsense/TripMap.tsx",
-                                        lineNumber: 73,
-                                        columnNumber: 15
-                                    }, this),
-                                    t.dates,
-                                    " · ",
-                                    t.status
-                                ]
-                            }, void 0, true, {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "w-[230px] overflow-hidden",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                            className: "text-base",
+                                            children: t.short
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/wellsense/TripMap.tsx",
+                                            lineNumber: 74,
+                                            columnNumber: 7
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "my-1 text-xs",
+                                            children: [
+                                                t.dates,
+                                                " · ",
+                                                t.status
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/wellsense/TripMap.tsx",
+                                            lineNumber: 77,
+                                            columnNumber: 7
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: `/images/destinations/${t.month.toLowerCase()}.jpg`,
+                                            alt: `${t.short} destination`,
+                                            className: "mt-2 h-[130px] w-full rounded-lg object-cover",
+                                            loading: "lazy"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/wellsense/TripMap.tsx",
+                                            lineNumber: 82,
+                                            columnNumber: 7
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mt-2 text-xs",
+                                            children: [
+                                                "📍 ",
+                                                t.city
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/wellsense/TripMap.tsx",
+                                            lineNumber: 90,
+                                            columnNumber: 7
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mt-1 text-xs leading-relaxed",
+                                            children: t.description
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/wellsense/TripMap.tsx",
+                                            lineNumber: 95,
+                                            columnNumber: 7
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/wellsense/TripMap.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 5
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/src/components/wellsense/TripMap.tsx",
                                 lineNumber: 71,
-                                columnNumber: 13
+                                columnNumber: 3
                             }, this)
                         }, t.month, false, {
                             fileName: "[project]/src/components/wellsense/TripMap.tsx",
@@ -165,14 +206,14 @@ function TripMap({ trip }) {
                         "aria-hidden": true
                     }, void 0, false, {
                         fileName: "[project]/src/components/wellsense/TripMap.tsx",
-                        lineNumber: 80,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this),
                     " Explore trip location"
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/wellsense/TripMap.tsx",
-                lineNumber: 79,
+                lineNumber: 103,
                 columnNumber: 7
             }, this)
         ]

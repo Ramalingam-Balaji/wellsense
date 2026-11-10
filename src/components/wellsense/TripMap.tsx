@@ -61,19 +61,43 @@ export default function TripMap({ trip }: { trip: Trip }) {
         <MapController trip={trip} markersRef={markersRef} />
         {trips.map((t) => (
           <Marker
-            key={t.month}
-            position={t.coords}
-            icon={t.status === "Registration Open" ? pinIcon : pinIconSoon}
-            ref={(m) => {
-              markersRef.current[t.month] = m;
-            }}
-          >
-            <Popup>
-              <b>{t.short}</b>
-              <br />
-              {t.dates} · {t.status}
-            </Popup>
-          </Marker>
+  key={t.month}
+  position={t.coords}
+  icon={t.status === "Registration Open" ? pinIcon : pinIconSoon}
+  ref={(m) => {
+    markersRef.current[t.month] = m;
+  }}
+>
+  <Popup>
+    <div className="w-[230px] overflow-hidden">
+      {/* Destination name */}
+      <b className="text-base">{t.short}</b>
+
+      {/* Trip dates and status */}
+      <p className="my-1 text-xs">
+        {t.dates} · {t.status}
+      </p>
+
+      {/* Destination image */}
+      <img
+        src={`/images/destinations/${t.month.toLowerCase()}.jpg`}
+        alt={`${t.short} destination`}
+        className="mt-2 h-[130px] w-full rounded-lg object-cover"
+        loading="lazy"
+      />
+
+      {/* Destination location */}
+      <p className="mt-2 text-xs">
+        📍 {t.city}
+      </p>
+
+      {/* Description */}
+      <p className="mt-1 text-xs leading-relaxed">
+        {t.description}
+      </p>
+    </div>
+  </Popup>
+</Marker>
         ))}
       </MapContainer>
       <div className="map-label">
